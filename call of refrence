@@ -1,0 +1,16 @@
+#include <stdio.h>
+void ref(int x,int y,int *p,int *p1,int *p2)
+{
+*p=x+y;
+*p1=x-y;
+*p2=x*y;  
+}
+int main()
+{
+  int a=5,b=6,sum=0,dif=0,prod=0;
+  printf("%d\n%d\n",a,b);
+  ref(a,b,&sum,&dif,&prod);
+    printf("%d\n%d\n%d\n",sum,dif,prod);
+
+    return 0;
+}
